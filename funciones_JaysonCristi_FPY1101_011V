@@ -1,0 +1,37 @@
+titulos_de_libro = ['ALAS DE HIERRO', 'LA SOMBRA DE LA SIRENA']
+autor_de_libro = ['REBECA YARROS', 'CAMILA LACKBERG']
+año_de_publicacion = ['2024', '2023']
+SKU_del_libro = ['ALASDE-REB-2024','LASOMB-CAM-2023']
+libro = []
+
+nombres_de_usuario = ['VALERIA RUMINOT', 'CAMILA AYALA']
+
+def registro_de_libro(libro):
+    titulos_de_libro = input("ingrese el titulo de el libro:")
+    autor_de_libro = input("ingrese el autor de el libro:")
+    año_de_publicacion =input("ingrese el año de piublicaciuon del libro:")
+    SKU_del_libro = input("ingrese el SKU de el libro")
+
+    libro.append({
+        'TITULO' : titulos_de_libro,
+        'AUTOR' : autor_de_libro,
+        'AÑO DE PUBLICACION' : año_de_publicacion,
+        'SKU' : SKU_del_libro
+    })
+
+    
+    if nombres_de_usuario == nombres_de_usuario and SKU_del_libro == SKU_del_libro:
+        print("este libro si esta disponible")
+    else:
+        print("el libro no esta disponible actualmente")
+                                                                                                    
+def reporte_de_prestamos(libro):
+    usuario_ingresado = input("ingrese su usuario")
+    if usuario_ingresado == "":
+        archivo_reporte = "reporte.txt"
+
+
+
+
+
+

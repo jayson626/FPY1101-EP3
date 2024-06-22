@@ -1,0 +1,23 @@
+datos = []
+libro = []
+
+nombre_de_usuario = print("ingrese su nombre de usuario:")
+
+def registro_de_libro(libro):
+    titulo_libro = input("ingrese el titulo del libro: ")
+    autor_libro = input("ingrese el autor del libro: ")
+    while autor_libro not in registro_de_libro:
+        print("el autor que usted a ingresado no axiste, intentelo nuevamente")
+        autor_libro =  input("ingrese el autor del libro: ")
+    año_de_publicacion = int(input ("ingrese el año de publicacion del libro: "))   
+    SKU = []
+
+    libro.append ({
+        'TITULO' : titulo_libro,
+        'AUTOR' : autor_libro,
+        'AÑO DE PUBLICACION' : año_de_publicacion,
+    })
+
+
+    SKU_del_libro = input("ingrese el SKU del libro ")
+    
